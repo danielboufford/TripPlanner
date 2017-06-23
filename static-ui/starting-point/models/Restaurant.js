@@ -1,4 +1,5 @@
 const db = require("./db");
+const Sequelize = require("sequelize");
 
 const Restaurant = db.define('restaurant', {
 	name: {
@@ -11,3 +12,5 @@ const Restaurant = db.define('restaurant', {
 		type: Sequelize.INTEGER //has to be 1-5, unsure
 	}
 });
+
+module.exports = Restaurant;

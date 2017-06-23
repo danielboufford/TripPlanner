@@ -6,7 +6,11 @@ const Hotel = db.define('hotel', {
 		type: Sequelize.STRING
 	},
 	num_stars: {
-		type: Sequelize.FLOAT(1, 5) //unsure
+		type: Sequelize.FLOAT,
+		validate: {
+			min: 1,
+			max: 5
+		}
 	},
 	amenities: {
 		type: Sequelize.TEXT

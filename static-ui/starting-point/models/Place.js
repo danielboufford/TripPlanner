@@ -16,7 +16,7 @@ const Place = db.define('place', {
 		type: Sequelize.STRING
 	},
 	location: {
-		type: Sequelize.ARRAY(Sequelize.FLOAT) // unsure
+		type: Sequelize.ARRAY(Sequelize.FLOAT) 
 	}
 });
 
